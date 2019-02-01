@@ -1,0 +1,114 @@
+h3.grid-title
+  font-size: 16px
+  line-height: 16px
+
+.grid-wrapper
+  padding: 35px 15px
+  display: flex
+  flex-wrap: nowrap
+  padding-right: 15px
+  .grid-item
+    &:last-child
+    border-right: 30px solid #f5f5f5
+    min-width: 268px
+    margin: 0 15px
+    flex-basis: auto
+    h5.card-title
+      font-size: 15px
+
+
+.subdivision
+  min-height: 300px
+  border: 2px solid black
+  
+.custom-heading
+  font-size: 18px !important
+  margin: 10px
+  color: red
+
+.division-sepration
+  color: black
+  border: 1px solid black
+  margin-top: 0 !important
+
+.issues-div
+  margin: 25px
+
+.numbers-div
+  border: 2px solid black
+  padding: 2px
+
+.mt-15
+  margin-top: 15px
+
+.mb_10_issuetypes
+  margin-bottom: 10px
+
+.gdrive_links
+    color: #20a8d8;
+    text-decoration: none;
+    background-color: transparent;   
+
+.gdrive_links:hover
+  color: white;
+  text-decoration: underline;
+  
+.file-box, .Support_box
+  display: grid;
+  align-items: stretch;
+  margin: 25px 0 0;
+  .card-title 
+    font-size: 18px !important;
+    background: #ccdce4;
+    padding: 10px;
+    text-align: center;
+  .alert 
+    padding: 5px 15px;
+    background-color: #f5f5f5;
+    border-color: #c3c7c9;
+    cursor: pointer
+    &:hover
+      background-color: #4ba8d8;
+      border-color: #4ba8d8;
+      cursor: pointer;
+      
+      .gdrive_links
+        color: white
+        text-decoration: underline;
+      a
+        color: #fff
+
+  .badge-secondary 
+      color: #fff;
+      background-color: #a4b7c1;
+      min-width: 25px;
+      margin-right: 5px;
+    
+  .list-group-item:hover .badge-secondary 
+    background-color: #4ba8d8;
+    cursor: pointer
+
+
+
+@media screen and (max-width: 768px)
+  .grid-title
+    flex: 1
+    min-width: 100%
+    padding-left: 15px
+    padding-right: 15px
+  .grid-item
+    + .grid-item
+      margin-top: 15px
+    justify-content: space-between
+    flex-basis: auto
+    display: flex
+    flex-wrap: wrap
+  .grid-wrapper
+    flex-direction: column
+    flex-wrap: wrap
+  .common_mobile_responsive
+    padding-top: 55px!important
+
+@media screen and (max-width: 767px)
+  .grid-title
+    padding: 0px
