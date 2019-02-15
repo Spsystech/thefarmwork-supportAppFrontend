@@ -2,8 +2,8 @@ import React from 'react';
 import {Row, Col} from 'reactstrap';
 import { connect } from 'react-redux';
 import './style.sass';
-import logoImg from '../../../assets/imgs/logo.png';
 import {getHomeData} from '../../actions/homeActions';
+
 class Header extends React.Component{
     constructor(props){
         super(props);
@@ -32,7 +32,7 @@ class Header extends React.Component{
                 <div className='container-fluid'>
                     <Row>
                         <Col className='text-left'>
-                            <img src={logoImg} className='img-responsive logo-image'/>
+                            <img src={`https://s3.us-east-2.amazonaws.com/support-app/logo.png`} className='img-responsive logo-image'/>
                         </Col>
                         <Col className='text-left account-ul'>
                             <ul>
